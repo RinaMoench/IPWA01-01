@@ -1,5 +1,5 @@
 * {
-    list-style-type: none;
+    
 }
 
 body {
@@ -10,3 +10,17 @@ body {
     position: sticky;
     top: 100%;
 }
+
+
+.btn-gradient {
+    background: linear-gradient(45deg, #1D976C, #93F9B9);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .btn-gradient:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+
