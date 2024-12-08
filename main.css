@@ -4,10 +4,110 @@
 
 body {
     min-height: 100vh;
+    background: url(/images/background-1877877_1920.jpg) no-repeat center center;
 }
-
-.footer {
+.navbar {
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .sidebar {
     position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    color: rgb(91, 172, 67);
+    transition: left 0.3s;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    color: rgb(91, 172, 67);
+    text-decoration: none;
+    margin: 15px 0;
+  }
+  .sidebar.show {
+    left: 0;
+  }
+.hero {
+    height: calc(100vh-100px);
+    position: relative;
+    background: url() no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  .text-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+  }
+   /* Wrapper-Klasse */
+   .content-wrapper {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 80vw;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Zusätzlicher Abstand für Abschnitte */
+  .content-wrapper > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+/* Formular Kleiderspenden-Registrierung */
+#Spende {
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #f8f9fa;
+} 
+
+#backButton, 
+#nextButton {
+    width: 100px; /* Einheitliche Breite */
+    height: 40px; /* Einheitliche Höhe */
+    margin-bottom: 30px;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+
+  #backButton:hover {
+    color: black; 
+    border-color: #f8f9fa; 
+  }
+
+  #nextButton:hover {
+    color: black; 
+    border-color: #f8f9fa;
+  } 
+/* Footer mit Website-Links und Copyright */
+.footer {
+    position: sticky;
     bottom: 0;
     width: 100%;
     background-color: #f8f9fa;
