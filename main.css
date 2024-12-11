@@ -142,4 +142,43 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 
-
+/* Standardgröße (Mobile first) */
+body {
+    font-size: 16px;
+  }
+  
+  /* Tablets (Portrait) */
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Tablets (Landscape) */
+  @media (min-width: 768px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  /* Laptops */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 22px;
+    }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1280px) {
+    body {
+      font-size: 24px;
+    }
+  }
+  
+  /* Große Desktops */
+  @media (min-width: 1600px) {
+    body {
+      font-size: 26px;
+    }
+  }
+  
