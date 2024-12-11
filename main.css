@@ -69,14 +69,15 @@ body {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 80vw;
+    height: auto;
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  /* Zusätzlicher Abstand für Abschnitte */
-  .content-wrapper > *:not(:last-child) {
+/* Zusätzlicher Abstand für Abschnitte */
+.content-wrapper > *:not(:last-child) {
     margin-bottom: 20px;
   }
 /* Formular Kleiderspenden-Registrierung */
@@ -87,24 +88,10 @@ body {
     color: #f8f9fa;
 } 
 
-#backButton, 
-#nextButton {
-    width: 100px; /* Einheitliche Breite */
-    height: 40px; /* Einheitliche Höhe */
-    margin-bottom: 30px;
-    color: #f8f9fa;
-    border-color: #f8f9fa;
-  }
+.hidden {
+    display: none;
+}
 
-  #backButton:hover {
-    color: black; 
-    border-color: #f8f9fa; 
-  }
-
-  #nextButton:hover {
-    color: black; 
-    border-color: #f8f9fa;
-  } 
 /* Footer mit Website-Links und Copyright */
 .footer {
     position: sticky;
